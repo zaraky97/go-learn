@@ -1,8 +1,7 @@
-CREATE TABLE products (
-    id SERIAL,
-    name VARCHAR(32) NOT NULL,
-    price INT(11) NOT NULL,
-    PRIMARY KEY (id)
-);
+create table products (
+id int  AUTO_INCREMENT NOT NULL primary key,
+productKey VARCHAR(32),
+productValue VARCHAR(32)
+) engine = MyISAM default charset = utf8;
 
-INSERT INTO products (name,price) VALUES ('PC',100000);
+INSERT INTO products (productKey,productValue) VALUES ('404','not found');

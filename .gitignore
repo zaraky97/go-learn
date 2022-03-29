@@ -1,2 +1,3 @@
 database/data
 src/tmp
+.env
