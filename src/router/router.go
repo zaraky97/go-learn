@@ -13,5 +13,6 @@ func Router(dbConnection *gorm.DB) {
 	}
 	r := gin.Default()
 	r.GET("/products", productHandler.GetProduct)
+	r.POST("/products", productHandler.PostProduct)
 	r.Run(":8080")
 }
